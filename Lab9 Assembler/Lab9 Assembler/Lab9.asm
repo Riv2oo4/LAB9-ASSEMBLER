@@ -238,7 +238,220 @@ main proc
     mov ax, monto_may       ; Mueve el monto de junio a registro AX
     mov bx,0
     mov array_montos[11], ax
-		
+;JUNIo
+    mov bx,0
+    mov ax, array_montos[0]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_jun  ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4   
+    
+    ;JULIO
+    mov bx,0
+    mov ax, array_montos[1]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_jul ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+    
+    ;AGOSTO
+    mov bx,0
+    mov ax, array_montos[2]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_ago ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+    ;SEPTIEMBRE
+    mov bx,0
+    mov ax, array_montos[3]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+
+    push offset msg_out_sep ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+    ;OCTUBRE
+    mov bx,0
+    mov ax, array_montos[4]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_oct ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+   ;NOVIEMBRE
+    mov bx,0
+    mov ax, array_montos[5]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_nov ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+    ;DICIEMBRE
+    mov bx,0
+    mov ax, array_montos[6]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_dic ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+    ;ENERO
+    mov bx,0
+    mov ax, array_montos[7]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_ene ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+    ;FEBRERO
+    mov bx,0
+    mov ax, array_montos[8]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_feb ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+
+   ;MAR
+    mov bx,0
+    mov ax, array_montos[9]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_mar ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+    ;ABRIL
+    mov bx,0
+    mov ax, array_montos[10]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_abr ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+    ;MAYO
+    mov bx,0
+    mov ax, array_montos[11]
+    mov ebx,20
+    xor edx, edx 
+    div ebx
+    push eax            ; Pone el nÃºmero en la pila
+    mov ecx, eax
+    mov edx, 20
+    imul edx, ecx
+    push edx             ; Pone el nÃºmero en la pila
+    
+    push offset msg_out_may ; Pone la direcciÃ³n de la cadena de formato en la pila
+    call printf          ; Llama a la funciÃ³n printf para imprimir el nÃºmero ingresado
+   
+    add esp, 4
+
+
+
+
+
+    
+    push 0
+    call exit;
+main endp
+end		
 
 main endp
      end
